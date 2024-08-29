@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My NEW PROJECT</title>
+    <style>
+        /* Set a background color for the entire page */
+        body {
+            background-image: linear-gradient(to right, #fefe58, #feb47b);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: white;
+        }
+
+        /* Style the paragraph */
+        p {
+            font-size: 2em;
+            color: #333;
+            margin: 20px;
+            font-weight: bolder;
+        }
+
+        /* Style the navigation bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: nowrap;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            white-space: nowrap;
+        }
+
+        /* Style the hero section */
+        .hero {
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-top: 60px; /* To prevent hero section from hiding behind navbar */
+        }
+
+        .hero h1 {
+    font-size: 3em;
+    margin: 0;
+    background-color: rgba(255, 255, 0, 0.7); /* Semi-transparent yellow */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        /* Marquee effect */
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+            font-size: 1.5em;
+            color: yellow;
+            font-weight: bold;
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
+        /* Style the images in the gallery */
+        .gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: scale-down;
+            object-position: inherit;
+            margin: 10px 0;
+            border-radius: 10px;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.25);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Gallery grid styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 20px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .gallery img {
+                height: 200px;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.0em;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            p {
+                font-size: 1.0em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery img {
+                height: 150px;
+            }
+
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 0em;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 8px 0;
+            }
+
+            p {
+                font-size: 1.0em;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Add rotation style for the video */
+        .rotate-video {
+            transform: rotate(0deg); /* Set to 0 degrees for no rotation */
+            transform-origin: center center;
+        }
+
+        .rotate-video1 {
+            transform: rotate(270deg); /* Rotate by 270 degrees */
+            transform-origin: center center;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Hero section -->
+    <section class="hero">
+        <h1>Welcome to My Project</h1>
+        <p>Your tagline or mission statement here.</p>
+    </section>
+
+ 
+    <div class="gallery">
+        <p>MY 𝕀𝔻𝕆𝕃</p>
+        <img src="1.jpg" alt="Image 1"><br>
+        <img src="2.jpg" alt="Image 2"><br>
+        <img src="3.jpg" alt="Image 3"><br>
+        <img src="4.jpg" alt="Image 4"><br>
+        <img src="5.jpg" alt="Image 5"><br>
+        <img src="msd 7.jpg" alt="Image 6"><br>
+        <img src="msd8.jpg" alt="Image 7"><br>
+        <img src="msd9.jpg" alt="Image 8"><br>
+        <img src="msd10.jpg" alt="Image 9"><br>
+    </div>
+
+    <p>My Idol: Mahendra Singh Dhoni
+        From my childhood days, Mahendra Singh Dhoni has always been a guiding light in my life. Watching him on the cricket field, I've learned not just about the sport, but about life itself. One of his most impactful teachings that I carry with me daily is his advice: "Control your mind, and success will come automatically."
+        
+        This simple yet profound statement has shaped my approach to challenges and opportunities in life. Whether it's staying calm under pressure, making tough decisions, or striving for success, I always remember Dhoni's words. His ability to maintain composure, focus, and humility, even in the most intense situations, is something I aspire to emulate.
+        
+        Dhoni’s journey from a small town in India to becoming one of the greatest cricketers in the world is a testament to the power of self-belief, hard work, and mental discipline. He taught me that success isn’t just about talent or luck—it's about mastering your mind and letting your actions speak louder than words.
+        
+        Every day, I strive to follow in his footsteps, keeping his wisdom close to my heart.</p>
+
+    <!-- Video section -->
+    <section class="video-section">
+        <h2>MY HERO video-section 1</h2>
+        <video id="video1" width="500" height="500" controls class="rotate-video">
+            <source src="msd1.mp4" type="video/mp4">
+        </video>
+        <p>Watch this inspiring video featuring the incredible achievements and moments of my hero. Dive into the 
+            highlights and relive the excitement!</p>
+        <!-- <button onclick="playvideo('video1')">Play Video</button> -->
+    </section>
+    
+    <script>
+        function playvideo(videoId) {
+            var video = document.getElementById(videoId);
+            if (video) {
+                video.play();
+            } else {
+                console.log("Video element not found");
+            }
+        }
+    </script>
+    <section class="video-section">
+        <h2>MY HERO video-section2</h2>
+        <video id="video2" width="1000" height="500" controls class="rotate-video">
+            <source src="msd2.mp4" type="video/mp4">
+        </video>
+        <p>Experience the thrilling journey of my hero as they conquer new heights and redefine greatness. Let this video inspire you!</p>
+        <!-- <button onclick="playvideo('video2')">Play Video</button> -->
+    </section>
+    <script>
+        // Function to auto-play video on hover and pause on mouse leave
+        document.querySelectorAll('video').forEach(video => {
+            video.addEventListener('mouseover', () => video.play());
+            video.addEventListener('mouseout', () => video.pause());
+        });
+    </script>
+    
+    
+    

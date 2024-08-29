@@ -1,0 +1,167 @@
+/* Set a background color for the entire page */
+body {
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+/* Style the paragraph */
+p {
+    font-size: 10em;
+    color: #333;
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Style the hero section */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 2.5em;
+}
+
+/* Style the images */
+img {
+    width: 200px; /* Adjust size as needed */
+    height:fit-content;
+    margin: 10px;
+    border: 2px solid #ddd; /* Light border around images */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+/* Add a hover effect for the images */
+img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+/* Style the gallery */
+.gallery {.gallery img {
+    width: 100%;            /* Make the image take up the full width of its container */
+    height: 300px;          /* Set a fixed height for the images */
+    object-fit: cover;      /* Ensure the image covers the container without stretching */
+    object-position: center;/* Center the image within its container */
+    margin: 10px 0;         /* Add some margin around the images */
+    border-radius: 10px;    /* Add rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth hover effects */
+}
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 20px;
+}
+
+.gallery img {
+    width: 100%;            /* Make the image take up the full width of its container */
+    height: 300px;          /* Set a fixed height for the images */
+    object-fit: cover;      /* Ensure the image covers the container without stretching */
+    object-position: center;/* Center the image within its container */
+    margin: 10px 0;         /* Add some margin around the images */
+    border-radius: 10px;    /* Add rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth hover effects */
+}
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+/* Style the images */
+img {
+    width: 100%; /* Make the image take up the full width of its container */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+    margin: 10px;
+    border: 2px solid #ddd; /* Light border around images */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+/* Add a hover effect for the images */
+img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+/* Gallery styles remain the same */
+.gallery {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 20px;
+}
+
+.gallery img {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .gallery img {
+        height: 200px;;
+    }
+
+}
+
+/* Media Query for screens smaller than 480px */
+
+@media (max-width: 480px) {
+    .gallery img {
+        height: 150px;      /* Adjust the height for mobile devices */
+    }
+}
